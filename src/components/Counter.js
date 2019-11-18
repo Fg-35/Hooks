@@ -5,8 +5,9 @@ function Counter() {
   // Déclare une fonction setCount qui permet de modifier la valeur de count
   const [count, setCount] = useState(0);
 
-  functionevent(event) {
+  function event(event) {
     setCount(Number(event.target.value))
+  
   }
 
   return (
@@ -20,7 +21,9 @@ function Counter() {
       </button>
       <input onChange={event} />
     </div>
+  
   );
+  
 }
 
 export default Counter;
